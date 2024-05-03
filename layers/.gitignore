@@ -1,0 +1,7 @@
+!**/nodejs/**/*
+!**/nodejs/**/dist/
+.serverless/
+
+.bin/
+@types/
+.package-lock.json
