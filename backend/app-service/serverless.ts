@@ -1,11 +1,13 @@
 import type { AWS } from "@serverless/typescript";
-import { functions } from "./serverless/functions";
+import { functions } from "./functions/functions";
 import { environment } from '../../infra/resources/environments';
 
 const serverlessConfiguration: AWS = {
   service: "hitcel-app-service",
   frameworkVersion: "3",
-  plugins: ["serverless-esbuild"],
+  plugins: [
+    "serverless-esbuild"
+  ],
   provider: {
     name: "aws",
     //@ts-expect-error
